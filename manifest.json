@@ -1,0 +1,23 @@
+{
+    "name": "Azure DevOps - Kanban board",
+    "description": "Author: Jakub Kurs (jakub.kurs@pl.experis.com)",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "background": {
+      "service_worker": "serv_worker.js"
+    },
+    "host_permissions": [
+      "https://dev.azure.com/*"
+    ],
+    "content_scripts": [ {
+      "css": [ "animate.min.css" ],
+      "run_at" : "document_end",
+      "matches": [ "https://dev.azure.com/*" ]
+   } ],
+    "web_accessible_resources": [{
+      "resources": ["main.js", "c.js"],
+      "matches": ["https://dev.azure.com/*"],
+      "all_frames": false
+    }],
+    "permissions": ["activeTab", "scripting", "tabs"]
+  } 
