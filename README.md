@@ -1,6 +1,6 @@
 # 🚀 Azure DevOps - Kanban Board (Chrome extension)
 
-A Chrome extension for Azure DevOps that makes the board look like a Jira Kanban Board.
+A Chrome extension for Azure DevOps that makes the board look like a Jira Kanban Board. Plugin written in free time to make work easier :)
 
 
 ## Board with extension
